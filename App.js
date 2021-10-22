@@ -30,7 +30,14 @@ export default function App() {
         data={courseGoals}
         renderItem={itemData => <GoalItem title={itemData.item.value} />}
       />
+     
     </View>
+
+     
+
+
+      
+
   );
 }
 
