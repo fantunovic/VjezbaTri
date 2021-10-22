@@ -11,12 +11,12 @@ const GoalInput = props => {
   return (
     <View style={styles.inputContainer}>
       <TextInput
-        placeholder="Course Goal"
+        placeholder="Upiši novi zapis"
         style={styles.input}
         onChangeText={goalInputHandler}
         value={enteredGoal}
       />
-      <Button title="ADD" onPress={props.onAddGoal.bind(this, enteredGoal)} />
+      <Button width='80%' color="#80b918" title="DODAJ ZAPIS" onPress={props.onAddGoal.bind(this, enteredGoal)} />
     </View>
   );
 };
@@ -28,11 +28,14 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   input: {
-    width: '10%',
+    width: '80%',
     borderColor: 'black',
     borderWidth: 1,
     padding: 10
-  }
+  },
+
+ 
+
 });
 
 export default GoalInput;
